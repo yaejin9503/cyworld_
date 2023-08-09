@@ -62,7 +62,7 @@
 .left__body__header__grey {
   width: 148px;
   height: 133px;
-  background-color: grey;
+  background-color: #e9e9e9;
 }
 .left__body__header__line {
   border-top: 1px dotted black;
@@ -71,7 +71,10 @@
 
 .left__body__profile {
   width: 100%;
-  height: 100%;
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .body__profile__contents {
@@ -85,9 +88,68 @@
   color: grey;
 }
 .left__body__footer {
+  width: 100%;
+}
+
+.wrapper__feel {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.body__footer__title {
+  font-size: 11px;
+  color: grey;
+  margin-bottom: 5px;
+}
+
+.body__footer__select select {
+  width: 100%;
+  border: 1px solid #9c9c9c;
+  font-size: 11px;
+  color: grey;
+  padding: 2px;
 }
 
 .wrapper__right {
   width: 524px;
   height: 472px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 5px;
+}
+
+.wrapper__right__header {
+  width: 510px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 14px;
+  align-items: flex-end;
+}
+
+.right__header__title,
+.right__header__setting {
+  color: #55b2e5;
+  font-size: 9px;
+}
+
+.right__header__title {
+  font-size: 16px;
+}
+
+.wrapper__right__body {
+  width: 510px;
+  height: 445px;
+  border: 1px solid grey;
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+
+.wrapper__right__body iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
 }
